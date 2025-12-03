@@ -1,0 +1,29 @@
+
+link do github do trabalho: https://github.com/MiguelNepomucenoGil/SimuladorRV32
+
+Motivação do trabalho:
+
+O objetivo central deste projeto é preencher a lacuna entre a teoria de Organização de Computadores e a prática
+de software. Enquanto muitos emuladores focam apenas no resultado final da execução, este simulador prioriza a 
+visualização do Caminho de Dados
+
+
+Fidelidade Arquitetural: O código não usa atalhos. Se a CPU precisa de um dado, ela deve solicitá-lo ao Barramento, 
+que consulta a Cache, que por sua vez busca na RAM. Nenhum componente acessa outro magicamente.
+
+Visualização do Datapath: Através da interface gráfica, tornamos visível o invisível. O projeto ilumina os componentes 
+ativos (ALU, Registradores, Memória) em tempo real, facilitando o entendimento do ciclo Fetch-Decode-Execute.
+
+Implementação de Baixo Nível: Focamos na manipulação real de bits para simular o comportamento elétrico e 
+lógico do hardware dentro de um ambiente de alto nível.
+
+
+Como visualizar:
+
+1 - A única biblioteca externa do python que utilizamos foi o tkinter, que pode ser instalado se vc utilizar o comando
+"pip install tkinter" ou "py -m pip install tkinter" no seu cmd (executado como adm). 
+
+2 - Para visualizar o modelo interativo, é necessário abrir o arquivo "visualizacao.py" e aplicar o "run as python terminal",
+ou apenas clicar no botão de rodar.
+
+
